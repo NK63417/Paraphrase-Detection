@@ -1,23 +1,57 @@
-# Paraphrase-Detection
+# Paraphrase Detection using Transformers and Graphs
 
-In natural language processing (NLP), paraphrase
-detection is an essential task that has applications in text
-summarization, information retrieval, and question answering.
-Although transformer-based models have shown state-of-the-art
-performance in several NLP tasks, adding graph attention
-mechanisms offers a chance to improve even further. In this
-paper, we offer a unique method for paraphrase identification
-that blends graph attention networks with transformer-based
-sequence classification. By focusing on the graph-structured
-interactions between input tokens, our model learns useful
-representations by utilizing the power of pre-trained transformer
-architectures. We conduct experiments on the MRPC dataset
-from the GLUE benchmark to show how effective our strategy is
-in comparison to baseline techniques. Our findings demonstrate
-that the addition of graph attention enhances paraphrase
-identification accuracy, leading to competitive results on test and
-validation sets. We also present a thorough study of the behavior
-of the model and talk about possible directions for further
-research. Our results demonstrate the potential to improve NLP
-tasks, especially in the paraphrase detection domain, by fusing
-transformer-based models with graph attention methods.
+An NLP model that combines BERT with Graph Attention Networks (GAT) to detect paraphrased sentence pairs from the MRPC dataset.
+
+---
+
+## 🚀 Project Highlights
+
+- Combines **transformer-based contextual modeling** with **graph-based token interaction**
+- Achieved **F1-score of 0.873** on the MRPC dataset
+- Built using **TensorFlow**, **BERT (bert-base-uncased)**, and **custom GAT layers**
+- Compared against baseline BERT-only model
+
+---
+
+## 🧠 Methodology
+
+- **Input**: Sentence pairs from MRPC
+- **Backbone**: BERT extracts contextual embeddings
+- **Graph Attention**: Learns semantic relationships between token embeddings
+- **Output**: Binary classification – paraphrase or not
+
+Architecture diagram:  
+*(Optional – link or embed model diagram or flowchart)*
+
+---
+
+## 📊 Results
+
+| Metric        | Hybrid Model | Base BERT |
+|---------------|--------------|------------|
+| Accuracy      | 0.8145       | 0.664      |
+| Precision     | 0.798        | 0.664      |
+| Recall        | 0.965        | 1.0        |
+| F1 Score      | 0.873        | 0.798      |
+
+---
+
+## 📁 File Structure
+
+Paraphrase-Detection/
+├── report/             # Final PDF paper
+├── presentation/       # PPT slides
+├── notebooks/          # Model development notebooks (if public)
+├── src/                # Custom code (e.g., GAT layers)
+├── requirements.txt    # Python dependencies
+├── README.md
+└── LICENSE
+
+---
+
+## ⚙️ Installation
+
+```bash
+git clone https://github.com/NK63417/Paraphrase-Detection.git
+cd Paraphrase-Detection
+pip install -r requirements.txt
