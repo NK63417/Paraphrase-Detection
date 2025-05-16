@@ -33,19 +33,6 @@ An NLP model that combines BERT with Graph Attention Networks (GAT) to detect pa
 
 ---
 
-## 📁 File Structure
-
-Paraphrase-Detection/
-├── report/             # Final PDF paper
-├── presentation/       # PPT slides
-├── notebooks/          # Model development notebooks (if public)
-├── src/                # Custom code (e.g., GAT layers)
-├── requirements.txt    # Python dependencies
-├── README.md
-└── LICENSE
-
----
-
 ## ⚙️ Installation
 
 ```bash
@@ -63,13 +50,6 @@ python train_model.py
 ```
 
 ---
-
-📚 References
-  •	GLUE Benchmark
-	•	BERT: Devlin et al. (2018)
-	•	GAT: Velickovic et al. (2017)
-
- ---
 
  🙋‍♂️ About Me
 
