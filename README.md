@@ -20,9 +20,6 @@ An NLP model that combines BERT with Graph Attention Networks (GAT) to detect pa
 - **Graph Attention**: Learns semantic relationships between token embeddings
 - **Output**: Binary classification – paraphrase or not
 
-Architecture diagram:  
-*(Optional – link or embed model diagram or flowchart)*
-
 ---
 
 ## 📊 Results
@@ -55,3 +52,29 @@ Paraphrase-Detection/
 git clone https://github.com/NK63417/Paraphrase-Detection.git
 cd Paraphrase-Detection
 pip install -r requirements.txt
+```
+
+---
+
+🧪 Run the Model
+
+```python
+python train_model.py
+```
+
+---
+
+📚 References
+  •	GLUE Benchmark
+	•	BERT: Devlin et al. (2018)
+	•	GAT: Velickovic et al. (2017)
+
+ ---
+
+ 🙋‍♂️ About Me
+
+Nanda Kishore Kappaganthula
+Graduate, Computer Science – Western University
+Reach me at: nandakishore02aug@gmail.com
+
+---
